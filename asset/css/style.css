@@ -9,13 +9,9 @@ a{
     z-index: 999;
     border-bottom: 2px solid black;
 }
-main{
-    width: 100%;
-    background-image: url("../image/background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+.nav-link:hover{
+    color: orangered!important;
+
 }
 .banner{
     position: relative;
@@ -34,10 +30,10 @@ main{
     height: 2rem;
     width: 100%;
     margin: 6rem 0 6rem;
-    background-color: white;
-    box-shadow: 1px 10px 5px 0px rgba(0,0,0,0.75);
+    background-color: orangered;
+    /* box-shadow: 1px 10px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 1px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 1px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 10px 5px 0px rgba(0,0,0,0.75); */
 }
 .banner-img{
     position: absolute;
@@ -46,9 +42,9 @@ main{
     width: 30%;
 }
 .ban-btn{
-    padding: 8px 16px;
+    padding: 8px 20px;
     background-color: black;
-    border: 1px solid orangered;
+    border: 2px solid orangered;
     border-radius: 30px;
     color: white;
 }
@@ -60,15 +56,31 @@ main{
     backdrop-filter: blur(10px);
     border: 1px solid white;
     border-radius: 10px;
-    box-shadow: 1px 10px 5px 5px rgba(0,0,0,0.75);
     min-height: 18rem;
     text-align: center;
+    border: 1px solid orangered;
 }
 .head-speech{
     backdrop-filter: blur(10px);
     border: 1px solid white;
     border-radius: 10px;
-    box-shadow: 1px 10px 5px 5px rgba(0,0,0,0.75);
     padding: 20px;
     min-height: 18rem;
+    text-align: justify;
 }
+.heading p{
+    color: orangered;
+
+}
+.course-card{
+    width: 22rem!important;
+}
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next{
+    padding: 5px 20px!important;
+    margin: 10px!important;
+    border: 1px solid orangered;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+
