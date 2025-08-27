@@ -84,3 +84,19 @@ a{
     border-radius: 10px;
 }
 
+/* about page */
+.common-heading{
+    height: 6em;
+    background-color: orangered;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.staff-card{
+    margin: 0 auto;
+    width: 18rem;
+    border: 1px solid orangered;
+}
+.staff li{
+    text-align: justify;
+    border: 1px solid orangered;
+}
+/* about page */
