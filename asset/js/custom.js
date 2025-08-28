@@ -27,3 +27,6 @@ lc_lightbox('.elem', {
   skin: 'dark',
   // more options here
 }); 
+
+
+Swal.fire("SweetAlert2 is working!");
