@@ -29,16 +29,39 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
-lc_lightbox('.elem', {
-  wrap_class: 'lcl_fade_oc',
-  gallery : true, 
-  thumb_attr: 'data-lcl-thumb', 
-  skin: 'dark',
-  // more options here
-}); 
 
 
-document.getElementById('sweetalert').addEventListener('click', function(){
-    Swal.fire("SweetAlert2 is working!");
-})
+document.addEventListener("DOMContentLoaded", () => {
+      const form = document.getElementById("myForm");
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault(); // stop reload
+
+        const name = form.querySelector('[name="name"]').value;
+        const email = form.querySelector('[name="email"]').value;
+
+        Swal.fire({
+          title: "Form Submitted!",
+          text: `Name: ${name}, Email: ${email}`,
+          icon: "success"
+        });
+
+        form.reset();
+      });
+    });
+
+
+    function formatDateTime(date) {
+      const options = {
+        month: "short",   // "Jan", "Feb", "Mar", etc.
+        day: "numeric",
+        year: "numeric",
+        hour: "numeric",
+        minute: "2-digit",
+        hour12: true      // 12-hour format with AM/PM
+      };
+      return date.toLocaleString("en-US", options);
+    }
+const now = new Date(); 
+document.getElementById("clock").innerHTML = formatDateTime(now); 
 

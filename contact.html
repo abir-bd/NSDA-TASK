@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="asset/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="asset/css/lightbox.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.5/dist/sweetalert2.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   
     <link rel="stylesheet" href="asset/css/all.css">
     <link rel="stylesheet" href="asset/css/bootstrap.min.css">
     <link rel="stylesheet" href="asset/css/style.css"> 
@@ -51,20 +51,27 @@
         <div class="container my-5">
             <div class="row">
                 <div class="col-lg-6 ">
-                    <form class="mb-3" action="" method="get">
+                    <form class="mb-3" id="myForm">
                         <label for="" class="form-label mt-3">Name</label>
-                        <input type="text" name="" id="" class="form-control" placeholder="Enter your name" aria-describedby="helpId"/> 
+                        <input type="text" required   class="form-control" placeholder="Enter your name" aria-describedby="helpId"/> 
                         <label for="" class="form-label mt-3">Phone</label>
-                        <input type="text" name="" id="" class="form-control" placeholder="Enter your name" aria-describedby="helpId"/>
+                        <input type="text" required   class="form-control" placeholder="Enter your name" aria-describedby="helpId"/>
                         <label for="" class="form-label mt-3">Email</label>
-                        <input type="text" name="" id="" class="form-control" placeholder="Enter your name" aria-describedby="helpId"/>
+                        <input type="text" required  class="form-control" placeholder="Enter your name" aria-describedby="helpId"/>
                         <label for="" class="form-label mt-3">Message</label>
                         <div class="mb-3">
                             <label for="" class="form-label"></label>
-                            <textarea class="form-control" name="" id="" rows="3"></textarea>
+                            <textarea class="form-control" required rows="3"></textarea>
                         </div>
-                        <button type="submit" onclick="" id="sweetalert" class="btn btn-warning">Submit </button> 
-                    </form>       
+                        <input type="submit"  class="btn btn-warning">
+                    </form>  
+                    <script>
+                    document.getElementById("myForm").addEventListener("submit", function(e) {
+                    e.preventDefault();
+                    console.log("Submit stopped ✅");
+                    Swal.fire("Success!", "Thanks for contacting", "success");
+                    });
+                    </script>     
                 </div>
                 <div class="col-lg-6">
                     <div class="contact-info my-5">
@@ -231,6 +238,7 @@
     
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="asset/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.5/dist/sweetalert2.all.min.js"></script>
     <script src="asset/js/custom.js"></script>
 </body>
