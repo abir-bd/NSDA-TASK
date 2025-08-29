@@ -1,3 +1,12 @@
+// faq
+var box =document.querySelectorAll(".box");
+
+for(i=0;i<box.length;i++){
+    box[i].addEventListener("click",function(){
+        this.classList.toggle("active");
+    })
+}
+
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
@@ -29,4 +38,7 @@ lc_lightbox('.elem', {
 }); 
 
 
-Swal.fire("SweetAlert2 is working!");
+document.getElementById('sweetalert').addEventListener('click', function(){
+    Swal.fire("SweetAlert2 is working!");
+})
+
