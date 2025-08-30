@@ -141,3 +141,34 @@ a{
 /* faq page */
 
 /* clock */
+
+
+/* REsponsive */
+
+@media (min-width: 320px) and (max-width: 767px) { 
+    .banner-title h1 {
+    font-size: 2em;
+    margin: 5rem 0 1rem;
+}
+.ban-btn {
+    padding: 8px 4px;
+}
+
+.underline {
+    margin: 8rem 0 6rem;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) { 
+
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+ }
+
+@media (min-width: 1400px) {  }
