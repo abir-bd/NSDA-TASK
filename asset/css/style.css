@@ -144,6 +144,12 @@ a{
 
 
 /* REsponsive */
+@media (min-width: 320px) and (max-width: 425px) { 
+.course-card {
+    width: 20rem!important;
+    margin: 0 auto;
+}
+}
 
 @media (min-width: 320px) and (max-width: 767px) { 
     .banner-title h1 {
@@ -157,14 +163,24 @@ a{
 .underline {
     margin: 8rem 0 6rem;
 }
+.course-card {
+    width: 14rem!important;
+    margin: 0 auto;
+}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-
+.course-card {
+    width: 18rem!important;
+    margin: 0 auto;
+}
 }
 
 @media (min-width: 992px) and (max-width: 1199px) { 
-
+.course-card {
+    width: 18rem!important;
+    margin: 0 auto;
+}
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
